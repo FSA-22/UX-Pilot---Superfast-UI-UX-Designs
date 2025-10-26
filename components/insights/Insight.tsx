@@ -11,7 +11,7 @@ const data: InsightItem[] = [
     percentage: '+12.4%',
     figure: '2,340',
     description: 'Monthly active users',
-    color: 'from-blue-100 to-blue-200',
+    color: 'green-100 to-green-200',
   },
   {
     id: '2',
@@ -27,7 +27,7 @@ const data: InsightItem[] = [
     percentage: '99.97%',
     figure: '99.97%',
     description: 'System uptime',
-    color: 'from-green-100 to-green-200',
+    color: '',
   },
   {
     id: '4',
@@ -52,7 +52,7 @@ const InsightsSection = () => {
         </p>
 
         {/* Card Grid */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-blue-50 gap-6 place-items-center">
           {data.map((item) => (
             <InsightCard key={item.id} item={item} />
           ))}
