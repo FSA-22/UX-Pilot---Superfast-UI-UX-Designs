@@ -6,7 +6,7 @@ import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-footerbg text-white py-12 mt-4">
+    <footer className="bg-footerbg text-white  rounded py-12 mt-4">
       {/* Top Section */}
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Logo + Description + Socials */}
@@ -16,9 +16,9 @@ const Footer = () => {
             <Image
               src="/monitor.svg"
               alt="Automussh Logo"
-              width={40}
-              height={40}
-              className="object-contain"
+              width={30}
+              height={30}
+              className="object-contain invert"
             />
             <h2 className="text-xl font-semibold">Automussh Insight</h2>
           </div>
