@@ -6,9 +6,9 @@ import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-footerbg text-white  rounded py-12 mt-4">
+    <footer className="bg-footerbg text-white rounded py-12 mt-4">
       {/* Top Section */}
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-12 grid grid-cols-1 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Logo + Description + Socials */}
         <section className="space-y-4">
           {/* Logo and text */}
