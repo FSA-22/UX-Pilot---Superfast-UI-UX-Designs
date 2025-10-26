@@ -13,13 +13,13 @@ const FeatureCard = ({ icon: Icon, title, description }: FeatureCardProps) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="flex flex-col items-center text-center p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all bg-white cursor-pointer"
+      className="flex flex-col items-center text-center p-10 rounded-2xl shadow-sm hover:shadow-lg transition-all bg-white cursor-pointer"
     >
       {/* Gradient Icon */}
-      <div className="mb-4 p-4 rounded-2xl bg-linear-to-r from-darkblue to-lightblue flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+      <div className="mb-4 p-4 rounded-2xl bg-gradient-right flex-center transform transition-transform duration-300 hover:scale-110">
         <Image
-          width={30}
-          height={30}
+          width={24}
+          height={24}
           alt="Feature Icon"
           src={Icon}
           className="w-8 h-8 filter brightness-0 invert"

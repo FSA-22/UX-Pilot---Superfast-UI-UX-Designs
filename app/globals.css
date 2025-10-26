@@ -161,3 +161,6 @@
 @utility primary-button {
   @apply bg-gradient-right text-white h-15 w-40 text-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 rounded-2xl py-4 px-6 font-semibold hover:bg-gray-100;
 }
+@utility header {
+  @apply sticky top-0 left-0 z-50 right-0 bg-white/80 backdrop-blur-md border-y border-gray-100 shadow-sm;
+}

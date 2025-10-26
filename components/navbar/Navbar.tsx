@@ -13,7 +13,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 left-0 z-50 right-0 bg-white/80 backdrop-blur-md border-y border-gray-100 shadow-sm">
+    <header className="header">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
         {/*  Left: Logo */}
         <div className="flex items-center space-x-2 whitespace-nowrap">
