@@ -1,17 +1,8 @@
 'use client';
 
-import React from 'react';
 import { Cpu, BarChart2, Users, DollarSign } from 'lucide-react';
 import InsightCard from '../cards/Insight';
-
-export type InsightItem = {
-  id: string;
-  icon: React.ReactNode;
-  percentage: string;
-  figure: string;
-  description: string;
-  color: string;
-};
+import { InsightItem } from '@/types';
 
 const data: InsightItem[] = [
   {
@@ -47,8 +38,8 @@ const data: InsightItem[] = [
     color: 'from-yellow-100 to-yellow-200',
   },
 ];
-// Main Insights Section Component
-const InsightsSection: React.FC = () => {
+
+const InsightsSection = () => {
   return (
     <section className="w-full py-20 px-6 flex justify-center bg-[#f5f9ff]">
       <div className="w-full max-w-6xl text-center">

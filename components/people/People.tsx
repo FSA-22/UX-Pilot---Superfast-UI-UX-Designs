@@ -3,14 +3,6 @@
 import PeopleCard from '../cards/People';
 import { peopleData } from '@/costants';
 
-export type Person = {
-  id: string;
-  image: string;
-  name: string;
-  discipline: string;
-  remark: string;
-};
-
 const PeopleSection = () => {
   return (
     <section className="w-full py-20 px-6 flex justify-center bg-white">

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Person } from '@/components/people/People';
+import { Person } from '@/types';
 
 type PeopleCardProps = {
   person: Person;

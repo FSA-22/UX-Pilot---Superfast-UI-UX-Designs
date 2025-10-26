@@ -22,7 +22,7 @@ const FeatureCard = ({ icon: Icon, title, description }: FeatureCardProps) => {
           height={30}
           alt="Feature Icon"
           src={Icon}
-          className="w-8 h-8 text-white"
+          className="w-8 h-8 filter brightness-0 invert"
         />
       </div>
 

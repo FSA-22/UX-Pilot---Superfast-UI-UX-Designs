@@ -1,8 +1,4 @@
-import { InsightItem } from '@/components/insights/Insight';
-
-type InsightCardProps = {
-  item: InsightItem;
-};
+import { InsightCardProps } from '@/types';
 
 const InsightCard = ({ item }: InsightCardProps) => {
   return (

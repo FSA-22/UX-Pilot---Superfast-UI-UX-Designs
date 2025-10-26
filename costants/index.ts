@@ -1,4 +1,4 @@
-import { Person } from '@/components/people/People';
+import { Person } from '@/types';
 
 export const navlinks = [
   { name: 'Home', href: '/' },
