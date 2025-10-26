@@ -60,7 +60,7 @@ export const peopleData: Person[] = [
   },
   {
     id: '2',
-    image: '/Images/avatar-5.jpg',
+    image: '/Images/avatar-2.jpg',
 
     name: 'Marcus Rodrigue',
     discipline: 'CTO at DataFlow',
