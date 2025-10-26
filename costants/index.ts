@@ -1,4 +1,5 @@
-import { Person } from '@/types';
+import { InsightItem, Person } from '@/types';
+import { figure } from 'motion/react-client';
 
 export const navlinks = [
   { name: 'Home', href: '/' },
@@ -15,14 +16,14 @@ export const features = [
       'Track your AI systems with intelligent alerts and real-time performance metrics.',
   },
   {
-    icon: '/monitor.svg',
+    icon: '/brain.svg',
 
     title: 'AI Insights',
     description:
       'Get deep insights into model performance with human-readable analytics.',
   },
   {
-    icon: '/monitor.svg',
+    icon: '/shield.svg',
 
     title: 'Secure & Reliable',
     description:
@@ -34,12 +35,7 @@ export const features = [
     title: 'Smart Data Handling',
     description: 'Collect, store, and manage your data efficiently.',
   },
-  {
-    icon: '/monitor.svg',
 
-    title: 'Cloud Integration',
-    description: 'Connect seamlessly to your favorite cloud platforms.',
-  },
   {
     icon: '/monitor.svg',
 
@@ -74,5 +70,40 @@ export const peopleData: Person[] = [
     discipline: 'Product Manager at InnovateLab',
     remark:
       '"Finally, an AI monitoring tool that speaks human language. Our entire team can now understand our AI performance metrics."',
+  },
+];
+
+export const insights: InsightItem[] = [
+  {
+    id: '1',
+    icon: '/users.svg',
+    percentage: '+12%',
+    figure: '2,340',
+    description: 'Active Users',
+    color: 'green-100 to-green-200',
+  },
+  {
+    id: '2',
+    icon: '/robot.svg',
+    percentage: '+8%',
+    figure: '124k',
+    description: 'AI Requests',
+    color: 'from-blue-100 to-blue-200',
+  },
+  {
+    id: '3',
+    icon: '/time.svg',
+    percentage: '99.97%',
+    figure: '99.97%',
+    description: 'Uptime',
+    color: 'from-purple-100 to-purple-200',
+  },
+  {
+    id: '4',
+    icon: '/target.svg',
+    figure: '92.4%',
+    percentage: '+5%',
+    description: 'Model Accuracy',
+    color: 'from-yellow-100 to-yellow-200',
   },
 ];
