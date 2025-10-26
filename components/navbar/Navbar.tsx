@@ -17,12 +17,12 @@ const NavBar = () => {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
         {/*  Left: Logo */}
         <div className="flex items-center space-x-2 whitespace-nowrap">
-          <div className="bg-linear-to-r from-darkblue to-lightblue rounded-lg p-2 flex items-center justify-center">
+          <div className="bg-gradient-right rounded-lg p-2 flex items-center justify-center">
             <Image
               src="/monitor.svg"
               alt="Automussh Logo"
-              width={20}
-              height={20}
+              width={18}
+              height={18}
               className="object-contain invert"
             />
           </div>
@@ -41,7 +41,7 @@ const NavBar = () => {
                   href={href}
                   className={`transition-all duration-200 ${
                     isActive
-                      ? 'text-black font-semibold hover:text-lightblue'
+                      ? 'text-gray-800 font-semibold hover:text-lightblue'
                       : 'text-gray-600 hover:text-lightblue'
                   }`}
                 >
@@ -53,7 +53,7 @@ const NavBar = () => {
         </ul>
 
         <div className="hidden md:block">
-          <Button className="rounded-full bg-linear-to-r from-darkblue to-lightblue text-white hover:opacity-90 w-32 h-9">
+          <Button className="rounded-full primary-button w-32 h-9">
             Get Started
           </Button>
         </div>
@@ -67,7 +67,6 @@ const NavBar = () => {
         </button>
       </nav>
 
-      {/* ✅ Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-md">
           <ul className="flex flex-col items-center py-4 space-y-4">
@@ -80,7 +79,7 @@ const NavBar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block text-base ${
                       isActive
-                        ? 'text-black font-semibold hover:text-lightblue'
+                        ? 'text-black font-medium hover:text-lightblue'
                         : 'text-gray-600 hover:text-lightblue'
                     }`}
                   >
@@ -89,7 +88,7 @@ const NavBar = () => {
                 </li>
               );
             })}
-            <Button className="mt-3 rounded-full bg-linear-to-r from-darkblue to-lightblue text-white w-32 h-9">
+            <Button className="mt-3 rounded-full bg-gradient-right text-white w-32 h-9">
               Get Started
             </Button>
           </ul>
