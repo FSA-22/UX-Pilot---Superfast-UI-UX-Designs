@@ -3,7 +3,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-lightblue: #6c9ce9;
+  --color-lightblue: #0052cc;
+
   --color-darkblue: #193273;
   --color-borderwhite: #e5e7eb;
   --color-footerbg: rgb(17 24 39 / var(--tw-bg-opacity, 1));
