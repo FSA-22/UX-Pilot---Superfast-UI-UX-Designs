@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="relative w-full md:w-1/2 flex justify-center items-center">
+      <div className=" z-20 w-full md:w-1/2 flex justify-center items-center">
         {/* Dashboard Image */}
         <div className="relative w-[320px] md:w-[500px]">
           <motion.div
@@ -47,7 +47,7 @@ const Hero = () => {
             alt="Dashboard Image"
             width={380}
             height={250}
-            className="rounded-xl shadow-lg"
+            className="rounded-xl shadow-lg max-sm:h-53 max-sm:w-100  max-md:h-80 max-md:w-full object-cover "
           />
 
           {/* Blinking circle animation */}
