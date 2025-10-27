@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-footerbg text-white rounded py-12 mt-4">
       {/* Top Section */}
-      <div className="container mx-auto px-12 grid grid-cols-1 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-12 grid grid-cols-1 place-items-start md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Logo + Description + Socials */}
         <section className="space-y-4">
           <Logo />
@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 pt-2">
+          <div className="flex justify-start items-start space-x-4 pt-2">
             <Link
               href="https://twitter.com"
               aria-label="Twitter"
