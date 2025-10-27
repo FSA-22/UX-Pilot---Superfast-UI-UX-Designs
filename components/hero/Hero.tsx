@@ -6,27 +6,26 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between bg-herobg gap-10 max-md:py-6 max-md:mb-5 md:gap-16 px-6 md:px-16 py-20 bg-gray-50 text-gray-500 m-h-screen h-screen w-full  overflow-hidden">
+    <section className="flex flex-col lg:flex-row items-center justify-between bg-blue-50 text-gray-600 w-full overflow-hidden px-6 md:px-12 lg:px-20 py-8 lg:py-20 gap-12 lg:gap-18">
       {/* LEFT SIDE */}
-      <div className="flex flex-col items-start text-left max-w-xl space-y-6">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-black md:text-nowrap leading-tight">
-          Automussh{' '}
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-darkblue to-lightblue">
-            Insight
-          </span>
+      <div className="flex flex-col items-start text-left w-full lg:w-1/2 space-y-6">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-nowrap leading-tight text-gray-900">
+          Automussh <span className="text-gradient">Insight</span>
         </h1>
-        <p className="text-2xl md:text-2xl text-gray-500">
+
+        <p className="text-base sm:text-lg lg:text-xl text-gray-500 max-w-lg">
           Your AI dashboard for real-time performance monitoring and
           human-centered insights.
         </p>
 
-        <div className="flex flex-wrap max-md:flex-col gap-4  max-md:w-full mt-4">
-          <Button className="primary-button rounded-2xl h-15 w-40 max-md:w-full">
+        <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+          <Button className="primary-button h-15 w-40 rounded-2xl max-md:w-full text-base">
             Get Started
           </Button>
+
           <Button
             variant="outline"
-            className="border-darkblue border-2 text-lg max-md:w-full text-darkblue h-15 w-40 rounded-2xl hover:bg-darkblue hover:text-white transition"
+            className="border-2 border-darkblue rounded-2xl  h-12 sm:h-14 px-8 text-base sm:text-lg w-full sm:w-auto hover:bg-darkblue hover:text-white transition"
           >
             Learn More
           </Button>
@@ -34,26 +33,29 @@ const Hero = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className=" z-20 w-full md:w-1/2 flex justify-center items-center">
-        {/* Dashboard Image */}
-        <div className="relative w-[320px] md:w-[500px]">
+      <div className="relative w-full lg:w-1/2 flex justify-center items-center">
+        <div className="relative w-[260px] sm:w-[340px] md:w-[375px] lg:w-[380px]">
+          {/* Animated Circle - Top Right */}
           <motion.div
-            className="absolute -top-5 right-26 max-md:-right-3 w-8 h-8 rounded-full bg-lightblue shadow-sm"
-            animate={{ opacity: [0.2, 1, 0.2] }}
+            className="absolute -top-4 -right-6 w-8 h-8 rounded-full bg-lightblue/70 shadow-md"
+            animate={{ opacity: [0.3, 1, 0.3] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           />
+
+          {/* Dashboard Image */}
           <Image
             src="/images/dashboard.png"
-            alt="Dashboard Image"
-            width={380}
-            height={250}
-            className="rounded-xl shadow-lg max-sm:h-53 max-sm:w-100  max-md:h-80 max-md:w-full object-cover "
+            alt="Dashboard Preview"
+            width={500}
+            height={30}
+            className="w-full h-auto rounded-xl shadow-xl object-cover"
+            priority
           />
 
-          {/* Blinking circle animation */}
+          {/* Animated Circle - Bottom Left */}
           <motion.div
-            className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full bg-lightblue shadow-sm"
-            animate={{ opacity: [0.2, 1, 0.5] }}
+            className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full bg-lightblue/70 shadow-md"
+            animate={{ opacity: [0.3, 1, 0.3] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           />
         </div>
