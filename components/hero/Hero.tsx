@@ -9,19 +9,19 @@ const Hero = () => {
     <section className="flex flex-col md:flex-row items-center justify-between bg-herobg gap-10 max-md:py-6 max-md:mb-5 md:gap-16 px-6 md:px-16 py-20 bg-gray-50 text-gray-500 m-h-screen h-screen w-full  overflow-hidden">
       {/* LEFT SIDE */}
       <div className="flex flex-col items-start text-left max-w-xl space-y-6">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-black leading-tight">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-black md:text-nowrap leading-tight">
           Automussh{' '}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-darkblue to-lightblue">
             Insight
           </span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-500">
+        <p className="text-2xl md:text-2xl text-gray-500">
           Your AI dashboard for real-time performance monitoring and
           human-centered insights.
         </p>
 
         <div className="flex flex-wrap max-md:flex-col gap-4  max-md:w-full mt-4">
-          <Button className="primary-button h-15 w-40 max-md:w-full">
+          <Button className="primary-button rounded-2xl h-15 w-40 max-md:w-full">
             Get Started
           </Button>
           <Button
