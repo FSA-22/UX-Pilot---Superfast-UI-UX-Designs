@@ -14,7 +14,7 @@ const Logo = () => {
           className="object-contain invert"
         />
       </div>
-      <span className="font-bold text-lg sm:text-xl tracking-tight">
+      <span className="font-semibold text-md sm:text-lg tracking-tight">
         Automussh Insight
       </span>
     </div>

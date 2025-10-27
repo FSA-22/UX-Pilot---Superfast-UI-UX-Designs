@@ -5,7 +5,7 @@ import PeopleSection from '@/components/people/People';
 
 const Home = () => {
   return (
-    <main className=" flex flex-col items-center  border-4 border-l border-r border-b border-gray-100">
+    <main className="flex flex-col justify-center items-center w-full min-h-screen overflow-hidden">
       <Hero />
       <Features />
       <InsightsSection />

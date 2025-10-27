@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="flex flex-col lg:flex-row items-center justify-between bg-blue-50 text-gray-600 w-full overflow-hidden px-6 md:px-12 lg:px-20 py-8 lg:py-20 gap-12 lg:gap-18">
       {/* LEFT SIDE */}
       <div className="flex flex-col items-start text-left w-full lg:w-1/2 space-y-6">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-nowrap leading-tight text-gray-900">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold md:text-nowrap leading-tight text-gray-900">
           Automussh <span className="text-gradient">Insight</span>
         </h1>
 

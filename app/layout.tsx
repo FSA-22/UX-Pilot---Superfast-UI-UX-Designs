@@ -33,9 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} font-sans   antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} font-sans p-6 md:p-10 antialiased`}
       >
-        <div className="p-6 rounded-md max-w-7xl mx-auto">
+        <div className="border-4 border-gray-200 rounded-md">
           <NavBar />
           {children}
           <Footer />
