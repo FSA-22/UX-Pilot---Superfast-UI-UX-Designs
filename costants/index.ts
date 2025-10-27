@@ -65,7 +65,7 @@ export const peopleData: Person[] = [
   },
   {
     id: '3',
-    image: '/Images/avatar-1.jpg',
+    image: '/Images/avatar-5.jpg',
     name: 'Emma Thompson',
     discipline: 'Product Manager at InnovateLab',
     remark:
