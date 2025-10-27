@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} font-sans   antialiased`}
       >
-        <div className="p-6">
+        <div className="p-6 rounded-md max-w-7xl mx-auto">
           <NavBar />
           {children}
           <Footer />

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import Logo from '../shared/Logo';
 
 const Footer = () => {
   return (
@@ -11,18 +12,7 @@ const Footer = () => {
       <div className="container mx-auto px-12 grid grid-cols-1 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Logo + Description + Socials */}
         <section className="space-y-4">
-          {/* Logo and text */}
-          <div className="flex items-center space-x-2">
-            <Image
-              src="/monitor.svg"
-              alt="Automussh Logo"
-              width={30}
-              height={30}
-              className="object-contain invert"
-            />
-            <h2 className="text-xl font-semibold">Automussh Insight</h2>
-          </div>
-
+          <Logo />
           {/* Description */}
           <p className="text-sm text-gray-300 leading-relaxed">
             Empowering businesses with intelligent AI monitoring and

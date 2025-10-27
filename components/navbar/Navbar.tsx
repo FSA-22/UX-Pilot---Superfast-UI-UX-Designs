@@ -1,12 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
 import { navlinks } from '@/costants';
+import Logo from '../shared/Logo';
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -15,21 +15,7 @@ const NavBar = () => {
   return (
     <header className="header">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
-        {/*  Left: Logo */}
-        <div className="flex items-center space-x-2 whitespace-nowrap">
-          <div className="bg-gradient-right rounded-lg p-2 flex items-center justify-center">
-            <Image
-              src="/monitor.svg"
-              alt="Automussh Logo"
-              width={18}
-              height={18}
-              className="object-contain invert"
-            />
-          </div>
-          <span className="font-bold text-lg sm:text-xl tracking-tight">
-            Automussh Insight
-          </span>
-        </div>
+        <Logo />
 
         {/*  Center: Desktop Nav Links */}
         <ul className="hidden md:flex items-center gap-8">
