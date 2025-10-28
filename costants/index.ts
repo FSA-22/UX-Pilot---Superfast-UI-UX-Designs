@@ -47,7 +47,7 @@ export const features = [
 export const peopleData: Person[] = [
   {
     id: '1',
-    image: '/Images/avatar-1.jpg',
+    image: '/images/avatar-1.jpg',
 
     name: 'Sarah Chen',
     discipline: 'AI Engineer at TechCorp',
@@ -56,7 +56,7 @@ export const peopleData: Person[] = [
   },
   {
     id: '2',
-    image: '/Images/avatar-2.jpg',
+    image: '/images/avatar-2.jpg',
 
     name: 'Marcus Rodrigue',
     discipline: 'CTO at DataFlow',
@@ -65,7 +65,7 @@ export const peopleData: Person[] = [
   },
   {
     id: '3',
-    image: '/Images/avatar-5.jpg',
+    image: '/images/avatar-5.jpg',
     name: 'Emma Thompson',
     discipline: 'Product Manager at InnovateLab',
     remark:
